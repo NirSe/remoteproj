@@ -6,7 +6,7 @@ spec:
   - url: folder1/load1.py
     name: load1
     image: mlrun/mlrun
-    handler: load_data
+    handler: load_data1
     with_repo: true
   workflows: []
   artifacts: []
