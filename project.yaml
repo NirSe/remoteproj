@@ -1,2 +1,16 @@
-
-name: nir-project
+kind: project
+metadata:
+  name: nir-rem-test
+spec:
+  functions:
+  - url: folder1/load1.py
+    name: load1
+    image: mlrun/mlrun
+    handler: load_data
+    with_repo: true
+  workflows: []
+  artifacts: []
+  source: git://github.com/nirse/remoteproj.git
+  subpath: ''
+  origin_url: git://github.com/nirse/remoteproj.git
+  desired_state: online
