@@ -1,5 +1,5 @@
 
-from my_data1 import folder1.find_car
+from folder1.my_data1 import find_car
 
 
 def load_data1(car: str = 'Toyota'):
