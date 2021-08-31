@@ -20,6 +20,16 @@ def main(local=True):
 
     load_func.run()
 
+    load_func = mlrun.new_function(name='load1',
+                                  handler='load_data1',
+                                  kind='job',
+                                  image='mlrun/mlrun',
+                                  command='folder1/load1.py',
+                                  source="git://github.com/nirse/remoteproj.git"
+                                  )
+
+    load_func.run()
+
     train_func = mlrun.new_function(name='train',
                                     handler='train_data',
                                     kind='job',
